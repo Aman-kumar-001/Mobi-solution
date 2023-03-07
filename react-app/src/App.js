@@ -8,11 +8,13 @@ import Singleproduct from "./components/single-product/singleproduct";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Newsletter from "./components/footer/newsletter/newsletter";
+import Appcontext from "./utils/context";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <Appcontext>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,6 +23,7 @@ function App() {
         </Routes>
         <Newsletter />
         <Footer />
+        </Appcontext>
       </BrowserRouter>
     </div>
   );

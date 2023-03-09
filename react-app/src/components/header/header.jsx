@@ -9,10 +9,24 @@ import cart from "../cart/cart";
 import { Context } from "../../utils/context";
 
 import "./header.scss"
-const header = () => {
+const Header = () => {
+       const [scrolled, setscrolled] = useState(false);
+       const handleScroll = () => {
+         const offset = window.scrollY;
+         if(offset>200){
+         setscrolled(true);
+       } else{
+        setscrolled(false);
+       }
+       };
+
+        useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <header className="main-header">
-            <div class-name="header-content">
+        <header className={`main-header ${scrolled ? 'sticky-header' : ""}`}>
+            <div className="header-content">
                 <ul className="left">
                     <li>Home</li>
                     <li>About</li>
@@ -24,6 +38,7 @@ const header = () => {
                      <AiOutlineHeart /> 
                     <span className="cart-icon">
                        <CgShoppingCart />
+                       <span>5</span>
                     </span>
                 </div>
             </div>
@@ -31,4 +46,4 @@ const header = () => {
     );
 };
 
-export default header;
+export default Header;

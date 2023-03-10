@@ -1,6 +1,11 @@
 import "./Home.scss";
+
+import banner from "../../components/home/banner/banner";
+
 const Home = () => {
-    return <div>Home jvhsdjhs</div>
+    return <div className="home">
+        <banner />
+    </div>
 };
 
 export default Home;

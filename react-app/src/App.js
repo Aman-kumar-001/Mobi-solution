@@ -9,6 +9,7 @@ import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Newsletter from "./components/footer/newsletter/newsletter";
 import Appcontext from "./utils/context";
+import Banner from "./components/home/banner/banner";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
           <Route path="/category/:id" element={<Category />} />
           <Route path="/singleproduct/:id" element={<Singleproduct />} />
         </Routes>
-        <Newsletter />
-        <Footer />
+        <Banner/>
+        {/* <Newsletter /> */}
+        {/* <Footer /> */}
         </Appcontext>
       </BrowserRouter>
     </div>

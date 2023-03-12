@@ -23,8 +23,8 @@ function App() {
           <Route path="/singleproduct/:id" element={<Singleproduct />} />
         </Routes>
         <Banner/>
-        {/* <Newsletter /> */}
-        {/* <Footer /> */}
+         <Newsletter /> 
+         <Footer /> 
         </Appcontext>
       </BrowserRouter>
     </div>

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Cart from "./components/cart/cart";
-import Category from "./components/category/category";
+import Category from "./components/home/category/category";
 import Home from "./components/home/Home";
 // import Product from "./components/products/product";
 import Singleproduct from "./components/single-product/singleproduct";
@@ -22,7 +22,6 @@ function App() {
           <Route path="/category/:id" element={<Category />} />
           <Route path="/singleproduct/:id" element={<Singleproduct />} />
         </Routes>
-        <Banner/>
          <Newsletter /> 
          <Footer /> 
         </Appcontext>

@@ -52,7 +52,9 @@ const Footer = () => {
             <div className="text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, officia?
             </div>
-            <img src={payment} />
+           
+              <img src={payment} />
+             
         </div>
       </div>
     </footer>

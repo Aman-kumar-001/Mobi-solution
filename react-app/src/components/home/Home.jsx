@@ -1,11 +1,23 @@
 import "./Home.scss";
 
-import banner from "../../components/home/banner/banner";
+
+import Category from "./category/category";
+import Banner from "../../components/home/banner/banner";
+// import Banner from "../../components/home/banner/banner";
+import Products from "../products/product";
 
 const Home = () => {
-    return <div className="home">
-        <banner />
+  return (
+    <div >
+        <Banner/>
+      <div className="main-content">
+        <div className="layout">
+           <Category /> 
+           <Products />
+        </div>
+      </div>
     </div>
+  );
 };
 
 export default Home;

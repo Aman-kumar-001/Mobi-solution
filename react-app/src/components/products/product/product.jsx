@@ -1,5 +1,6 @@
-import "../product.scss";
 import pod1 from "../../../assests/earbuds-prod-1.webp"; 
+
+import "./product.scss"
 
 const Product = () => {
     return (

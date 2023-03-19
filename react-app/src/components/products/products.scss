@@ -28,7 +28,7 @@
      }
      .products{
         display: flex;
-        flex-flow: wrap;
+        flex-wrap: wrap;
         gap: 10px;
         @include md{
             gap: 20px;

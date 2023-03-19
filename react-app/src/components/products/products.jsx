@@ -1,4 +1,4 @@
-import "./product.scss";
+import "./products.scss";
 import Product from "./product/product";
 
 const Products = () => {

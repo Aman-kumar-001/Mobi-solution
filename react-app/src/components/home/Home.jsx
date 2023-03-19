@@ -4,7 +4,7 @@ import "./Home.scss";
 import Category from "./category/category";
 import Banner from "../../components/home/banner/banner";
 // import Banner from "../../components/home/banner/banner";
-import Products from "../products/product";
+import Products from "../products/products";
 
 const Home = () => {
   return (

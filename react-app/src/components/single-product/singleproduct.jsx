@@ -22,7 +22,7 @@ const singleproduct = () => {
                         <img src={pod1} alt="" />
                     </div>
                     <div className="right">
-                        <span className="name">product name</span>
+                        <span className="name">Product name</span>
                         <span className="price">price</span>
                         <span className="desc">product description</span>
                         
@@ -41,7 +41,7 @@ const singleproduct = () => {
                          <span className="divider" />
                          <div className="info-item">
                             <span className="text-bold">
-                                Category
+                                Category:-
                             <span>Headphones</span>
                             </span>
                             <span className="text-bold">
@@ -58,7 +58,7 @@ const singleproduct = () => {
 
                     </div>
                 </div>
-                {/* <RelatedProducts /> */}
+                 <RelatedProducts /> 
             </div>
         </div>
     );

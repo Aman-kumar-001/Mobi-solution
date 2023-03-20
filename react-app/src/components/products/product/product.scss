@@ -20,7 +20,34 @@
             height: 350px;
         }
         img{
-            height:310px
+            height:310px;
+            
+        }
+    }
+    .prod-details{
+        .name{
+            font-size: 14px;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            @include md{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        .price{
+            font-size: 18px;
+            @include md{
+                font-size: 24px;
+            }
+        }
+    }
+    &:hover{
+        .thumbnail{
+            img{
+                transform: scale(1.2);
+            }
         }
     }
 }

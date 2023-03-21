@@ -2,11 +2,19 @@ import { MdClose } from "react-icons/md";
 import {BsCartX} from "react-icons/bs";
 
 import "../cart/cart.scss";
-const Cart = () => {
+const Cart = ({setShowCart}) => {
     return (
         <div className="cart-panel">
             <div className="opac-layer"></div>
-            <div className="cart-content">this is the cart section </div>
+            <div className="cart-content">
+                <div className="cart-header">
+                    <span className="heading">Shopping cart</span>
+                    <span className="close-btn" onClick={() => setShowCart(false)}>
+                        <MdClose />
+                        <span className="text">close</span>
+                    </span>
+                </div>
+            </div>
         </div>
     );
 };

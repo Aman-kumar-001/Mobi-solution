@@ -29,6 +29,12 @@
     @include md {
       width: 340px;
     }
+    .cart-header{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 15px;
+    }
   }
 }
 @keyframes slideCartWindow {
